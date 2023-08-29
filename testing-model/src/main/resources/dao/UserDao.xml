@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JdbcEntitySetup
+    xmlns="http://www.ontimize.com/schema/jdbc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.ontimize.com/schema/jdbc http://www.ontimize.com/schema/jdbc/ontimize-jdbc-dao.xsd"
+    catalog="" schema="${mainschema}" table="TUSER"
+    datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
+    <DeleteKeys>
+        <Column>username</Column>
+    </DeleteKeys>
+    <UpdateKeys>
+        <Column>username</Column>
+    </UpdateKeys>
+    <Queries>
+        <Query id="default">
+            <ValidColumns>
+                <Column>id</Column>
+                <Column>username</Column>
+                <Column>password</Column>
+                <Column>dni</Column>
+                <Column>name</Column>
+                <Column>surnames</Column>
+                <Column>subscription</Column>
+                <Column>role</Column>
+                <Column>start_date</Column>
+                <Column>end_date</Column>
+            </ValidColumns>
+            <Sentence>
+                <![CDATA[
+                    SELECT
+                        #COLUMNS#
+                    FROM
+                        ${mainschema}.TUSER
+                    #WHERE#
+                ]]>
+            </Sentence>
+        </Query>    
+        <Query id="login">
+            <ValidColumns>
+                <Column>id</Column>
+                <Column>username</Column>
+                <Column>password</Column>
+                <Column>dni</Column>
+                <Column>name</Column>
+                <Column>surnames</Column>
+                <Column>subscription</Column>
+                <Column>role</Column>
+                <Column>start_date</Column>
+                <Column>end_date</Column>
+            </ValidColumns>
+            <Sentence>
+                <![CDATA[
+                    SELECT 
+                        #COLUMNS#
+                    FROM                        
+                        ${mainschema}.TUSER
+                    #WHERE#
+                ]]>
+            </Sentence>
+        </Query>
+    </Queries>
+</JdbcEntitySetup>

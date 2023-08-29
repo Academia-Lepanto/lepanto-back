@@ -1,0 +1,3 @@
+com\lepanto\testing\model\core\dao\UserDao.class
+com\lepanto\testing\model\core\dao\UserRoleDao.class
+com\lepanto\testing\model\core\service\UserService.class
