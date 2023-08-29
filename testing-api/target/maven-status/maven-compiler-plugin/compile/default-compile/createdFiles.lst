@@ -1,0 +1,6 @@
+com\lepanto\testing\api\core\service\IUserService.class
+com\lepanto\testing\api\core\service\IQuestionService.class
+com\lepanto\testing\api\core\service\IAptitudesService.class
+com\lepanto\testing\api\core\service\ICategoryAptitudeService.class
+com\lepanto\testing\api\core\service\IRoleService.class
+com\lepanto\testing\api\core\service\ISubscriptionService.class
