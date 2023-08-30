@@ -1,1 +1,1 @@
-web: java -jar target/testing-boot.jar
+web: java -Dserver.port=$PORT -jar target/testing-boot.jar
