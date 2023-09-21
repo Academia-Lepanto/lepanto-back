@@ -54,7 +54,7 @@ ontimize:
          role-login-column: user_
          role-name-column: rolename
 server:
-   port: $PORT
+   port: {$PORT:8080}
    tomcat:
       uri-encoding: UTF-8
    compression:
