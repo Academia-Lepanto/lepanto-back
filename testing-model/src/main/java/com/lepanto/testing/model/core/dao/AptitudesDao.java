@@ -12,8 +12,7 @@ import org.springframework.stereotype.Repository;
         configurationFilePlaceholder = "dao/placeholders.properties")
 public class AptitudesDao extends OntimizeJdbcDaoSupport {
 
-
-    public static final String aptitude = "aptitude";
-    public static final String categories = "categories";
+    public static final String APTITUDE = "aptitude";
+    public static final String CATEGORIES = "categories";
 
 }

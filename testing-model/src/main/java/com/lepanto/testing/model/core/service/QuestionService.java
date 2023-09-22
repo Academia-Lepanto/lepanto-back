@@ -1,22 +1,16 @@
 package com.lepanto.testing.model.core.service;
 
 
-import java.sql.Timestamp;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.lepanto.testing.api.core.service.IQuestionService;
 import com.lepanto.testing.model.core.dao.QuestionDao;
+import com.ontimize.jee.common.dto.EntityResult;
+import com.ontimize.jee.server.dao.DefaultOntimizeDaoHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
-import com.lepanto.testing.api.core.service.IUserService;
-import com.lepanto.testing.model.core.dao.UserDao;
-import com.ontimize.jee.common.dto.EntityResult;
-import com.ontimize.jee.server.dao.DefaultOntimizeDaoHelper;
+import java.util.List;
+import java.util.Map;
 
 
 @Lazy
@@ -44,6 +38,5 @@ public class QuestionService implements IQuestionService {
     public EntityResult questionDelete(Map<String, Object> keyMap) {
         return this.daoHelper.delete(this.questionDao, keyMap);
     }
-
 
 }

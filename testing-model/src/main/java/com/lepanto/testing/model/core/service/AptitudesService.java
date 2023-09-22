@@ -15,12 +15,10 @@ import java.util.Map;
 @Service("AptitudesService")
 public class AptitudesService implements IAptitudesService {
 
-
     @Autowired
     private AptitudesDao aptitudesDao;
     @Autowired
     private DefaultOntimizeDaoHelper daoHelper;
-
 
     //Consulta aptitudes
     @Override
@@ -34,6 +32,5 @@ public class AptitudesService implements IAptitudesService {
     public EntityResult aptitudesInsert(Map<String, Object> attrMap) {
         return this.daoHelper.insert(aptitudesDao, attrMap);
     }
-
 
 }
