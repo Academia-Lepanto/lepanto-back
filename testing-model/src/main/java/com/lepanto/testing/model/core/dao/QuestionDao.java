@@ -28,6 +28,12 @@ public class QuestionDao extends OntimizeJdbcDaoSupport {
     public static final String answer2_correct = "answer2_correct";
     public static final String answer3_correct = "answer3_correct";
     public static final String answer4_correct = "answer4_correct";
+
+    public static final String imageanswer1 = "imageanswer1";
+    public static final String imageanswer2 = "imageanswer2";
+    public static final String imageanswer3 = "imageanswer3";
+    public static final String imageanswer4 = "imageanswer4";
+
     public static final String SCHEMA = "db_schema";
 
 }
