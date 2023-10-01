@@ -63,7 +63,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    jdbc-url: jdbc:{$DATABASE_URL}
+    url: { $DATABASE_URL }
     username:
     password:
     initial-size: 10
