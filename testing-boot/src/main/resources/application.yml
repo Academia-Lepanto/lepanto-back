@@ -63,9 +63,9 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    jdbc-url: jdbc:{ $DATABASE_URL:postgresql://drinanito:2WdX4GrstQUK@ep-dark-wave-01024168.eu-central-1.aws.neon.tech:5432/lepantoacademy }
-    username: { $DATABASE_USER:drinanito }
-    password: { $DATABASE_PASSWORD:2WdX4GrstQUK }
+    jdbc-url: jdbc:{$DATABASE_URL}
+    username:
+    password:
     initial-size: 10
     test-on-borrow: true
   main:
