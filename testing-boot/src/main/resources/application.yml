@@ -62,8 +62,8 @@ server:
     mime-types: application/json, application/xml
 spring:
   datasource:
+    url: jdbc:postgresql://${DATABASE_URL}
     driver-class-name: org.postgresql.Driver
-    url: { $DATABASE_URL }
     username:
     password:
     initial-size: 10
