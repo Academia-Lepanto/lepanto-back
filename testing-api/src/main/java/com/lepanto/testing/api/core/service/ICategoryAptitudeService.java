@@ -10,5 +10,8 @@ public interface ICategoryAptitudeService {
     // Consulta todas los categorias de una aptitud
     public EntityResult allCategoryAptitudeQuery(Map<Object, String> keyMap, List<String> attrList);
 
+    public EntityResult allCategoryAptitudeInsert(Map<?, ?> attrMap);
+
+    public EntityResult allCategoryAptitudeDelete(Map<String, Object> keyMap);
 }
 

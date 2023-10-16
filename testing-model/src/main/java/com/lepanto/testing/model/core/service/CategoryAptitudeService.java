@@ -51,4 +51,14 @@ public class CategoryAptitudeService implements ICategoryAptitudeService {
     public EntityResult allCategoryAptitudeQuery(Map<Object, String> keyMap, List<String> attrList) {
         return this.daoHelper.query(categoryAptitudeDao, keyMap, attrList);
     }
+
+    @Override
+    public EntityResult allCategoryAptitudeInsert(Map<?, ?> attrMap) {
+        return this.daoHelper.insert(categoryAptitudeDao, attrMap);
+    }
+
+    @Override
+    public EntityResult allCategoryAptitudeDelete(Map<String, Object> keyMap) {
+        return this.daoHelper.delete(this.categoryAptitudeDao, keyMap);
+    }
 }
