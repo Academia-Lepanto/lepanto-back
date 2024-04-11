@@ -63,12 +63,10 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    jdbc-url: jdbc:postgresql://vgkupcidiyoxfy:32646b768fa726e5187f5a35d4cdbcf56039506ef2c391d2192921ff4d9be5eb@ec2-54-195-228-159.eu-west-1.compute.amazonaws.com:5432/d82p5li0dmf0ej
+    jdbc-url: { $DATABASE_URL : jdbc:postgresql://ec2-54-195-228-159.eu-west-1.compute.amazonaws.com:5432/d82p5li0dmf0ej }
     #    jdbc-url: jdbc:postgresql://ep-dark-wave-01024168.eu-central-1.aws.neon.tech:5432/lepantoacademy
-    #    username: { $DATABASE_USERNAME }
-    #    password: { $DATABASE_PASSWORD }
-    username: kbnfklmaaipreh
-    password: 887e2f1ea18e21405ef843bf968d1bbea94c37268103160c24700a28426121c0
+    username: { $DATABASE_USERNAME : vgkupcidiyoxfy }
+    password: { $DATABASE_PASSWORD : 32646b768fa726e5187f5a35d4cdbcf56039506ef2c391d2192921ff4d9be5eb }
     initial-size: 10
     test-on-borrow: true
   main:
