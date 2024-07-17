@@ -11,4 +11,39 @@
     <UpdateKeys>
         <Column>question_code</Column>
     </UpdateKeys>
+    <Queries>
+        <Query id="countAptitudes">
+            <ValidColumns>
+                <Column>aptitude</Column>
+                <Column>countQuestions</Column>
+            </ValidColumns>
+            <Sentence>
+                <![CDATA[
+                    SELECT
+                        aptitude, count(*) as countQuestions
+                    FROM
+                        ${mainschema}.question
+                    group by aptitude
+                ]]>
+            </Sentence>
+        </Query>
+
+        <Query id="countCategories">
+            <ValidColumns>
+                <Column>aptitude</Column>
+                <Column>countQuestions</Column>
+            </ValidColumns>
+            <Sentence>
+                <![CDATA[
+                    SELECT
+                        aptitude, category, count(*) as countQuestions
+                    FROM
+                        ${mainschema}.question
+                    group by category
+                    order by aptitude, category
+                ]]>
+            </Sentence>
+        </Query>
+    </Queries>
 </JdbcEntitySetup>
+

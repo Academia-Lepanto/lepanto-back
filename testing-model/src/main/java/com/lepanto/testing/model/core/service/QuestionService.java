@@ -39,4 +39,10 @@ public class QuestionService implements IQuestionService {
         return this.daoHelper.delete(this.questionDao, keyMap);
     }
 
+    public EntityResult questionCountQuery(Map<?, ?> keyMap, List<?> attrList) {
+        return this.daoHelper.query(this.questionDao, keyMap, attrList, "countAptitudes");
+    }
+    public EntityResult questionCountCategoryQuery(Map<?, ?> keyMap, List<?> attrList) {
+        return this.daoHelper.query(this.questionDao, keyMap, attrList, "countCategories");
+    }
 }
