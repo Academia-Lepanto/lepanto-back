@@ -32,6 +32,7 @@
             <ValidColumns>
                 <Column>aptitude</Column>
                 <Column>countQuestions</Column>
+                <Column>category</Column>
             </ValidColumns>
             <Sentence>
                 <![CDATA[
@@ -39,7 +40,7 @@
                         aptitude, category, count(*) as countQuestions
                     FROM
                         ${mainschema}.question
-                    group by category
+                    group by aptitude, category
                     order by aptitude, category
                 ]]>
             </Sentence>
