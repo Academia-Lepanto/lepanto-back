@@ -15,7 +15,6 @@ import org.springframework.stereotype.Repository;
 public class UserDao extends OntimizeJdbcDaoSupport {
 
     public static final String USERNAME = "user_username";
-    public static final String USR_PASSWORD = "user_password";
     public static final String SUBSCRIPTION_TYPE = "user_subscription";
     public static final String DNI = "user_dni";
     public static final String ROLE = "user_role";

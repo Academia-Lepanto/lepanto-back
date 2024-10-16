@@ -40,7 +40,7 @@ public class UserService implements IUserService {
     }
 
     public EntityResult userInsert(Map<?, ?> attrMap) {
-        String passwordRaw = attrMap.get("user_password").toString();
+        String passwordRaw = attrMap.get(UserDao.PASSWORD).toString();
         String passwordHashed = BCrypt.hashpw(passwordRaw, BCrypt.gensalt());
         ((Map<Object, Object>) attrMap).put(passwordRaw, passwordHashed);
         return this.daoHelper.insert(userDao, attrMap);
