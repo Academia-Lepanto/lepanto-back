@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JdbcEntitySetup
-    xmlns="http://www.ontimize.com/schema/jdbc"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.ontimize.com/schema/jdbc http://www.ontimize.com/schema/jdbc/ontimize-jdbc-dao.xsd"
-    catalog="" schema="${mainschema}" table="TUSER"
-    datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
+        xmlns="http://www.ontimize.com/schema/jdbc"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.ontimize.com/schema/jdbc http://www.ontimize.com/schema/jdbc/ontimize-jdbc-dao.xsd"
+        catalog="" schema="${mainschema}" table="TUSER"
+        datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
     <DeleteKeys>
         <Column>username</Column>
     </DeleteKeys>
@@ -24,6 +24,8 @@
                 <Column>role</Column>
                 <Column>start_date</Column>
                 <Column>end_date</Column>
+                <Column>email</Column>
+                <Column>tlf</Column>
             </ValidColumns>
             <Sentence>
                 <![CDATA[
@@ -34,7 +36,7 @@
                     #WHERE#
                 ]]>
             </Sentence>
-        </Query>    
+        </Query>
         <Query id="login">
             <ValidColumns>
                 <Column>id</Column>
@@ -47,6 +49,8 @@
                 <Column>role</Column>
                 <Column>start_date</Column>
                 <Column>end_date</Column>
+                <Column>email</Column>
+                <Column>tlf</Column>
             </ValidColumns>
             <Sentence>
                 <![CDATA[
