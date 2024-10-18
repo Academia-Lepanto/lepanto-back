@@ -63,11 +63,10 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    # url: jdbc:postgresql://ec2-54-195-228-159.eu-west-1.compute.amazonaws.com:5432/d82p5li0dmf0ej
-    jdbc-url: jdbc:postgresql://cbfh1h65g5f6v1.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d6qhc4l0cqccpd
-    #jdbc-url: jdbc:postgresql://ep-dark-wave-01024168.eu-central-1.aws.neon.tech:5432/lepantoacademy
+    # url: jdbc:postgresql://u3stg5lbrhlabt:p9b127be07e7937f0021fa49370870d462364f9b1c12d52ce574e877771831da8@cb38t7goajtg6u.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d823dtlsjt3bel
+    jdbc-url: jdbc:postgresql://u3stg5lbrhlabt:p9b127be07e7937f0021fa49370870d462364f9b1c12d52ce574e877771831da8@cb38t7goajtg6u.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d823dtlsjt3bel
     username: u3stg5lbrhlabt
-    password: p41729982d53601f1661b9cd751061241f82b630ef8112ef988201f925f099039
+    password: p9b127be07e7937f0021fa49370870d462364f9b1c12d52ce574e877771831da8
     initial-size: 10
     test-on-borrow: true
   main:
