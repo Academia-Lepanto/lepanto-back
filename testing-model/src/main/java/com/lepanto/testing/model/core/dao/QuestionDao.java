@@ -19,6 +19,7 @@ public class QuestionDao extends OntimizeJdbcDaoSupport {
     public static final String aptitude = "aptitude";
     public static final String category = "category";
     public static final String images = "images";
+    public static final String imageexplication = "imageexplication";
     public static final String answer1 = "answer1";
     public static final String answer2 = "answer2";
     public static final String answer3 = "answer3";
